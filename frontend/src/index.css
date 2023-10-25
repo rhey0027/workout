@@ -1,0 +1,157 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+:root {
+  --primary: #2051f1;
+  --secondary: #e7195a;
+
+}
+body {
+  background: whitesmoke;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+nav {
+  background: #f7d30a;
+}
+nav .container {
+  max-width:  1660px;
+  background: #f7d30a;
+  height: 70px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  text-decoration: none;
+}
+.userContainer {
+  display: flex;
+  align-items: center;
+}
+.logoutBtn {
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #e7195a;
+  color: #fff;
+}
+.logoutBtn:hover {
+  background-color: #f35c8c;
+  transition: 0.3s ease;
+}
+.pages {
+  max-width: 1660px;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* home for workoutdetails */
+.home {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 50px;
+}
+.workout_details {
+  background: #fff;
+  border-radius: 4px;
+  margin: 20px auto;
+  padding: 10px;
+  position:relative;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+}
+.workout_details h4 {
+  margin: 0 0 10px 0;
+  font-size: 22px;
+  color: var(--primary);
+}
+.workout_details p{
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+/* workout form */
+label, input {
+  display: block;
+}
+input {
+  padding: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  padding: 10px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+form button:hover {
+  background: rgb(71, 71, 202);
+  transition: all 0.2s ease;
+}
+div.error {
+  padding: 5px;
+  background: #ffefef;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 4px;
+  margin: 14px 0;
+  
+}
+/* for delete button */
+.workout_details span {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  background: #f1f1f1;
+  padding: 5px;
+  border-radius: 5px;
+  color: #333;
+}
+.workout_details span:hover {
+  color: #ff0000;
+}
+.workout_details .created_at {
+  color: #ff0000;
+}
+
+/* empty fields error */
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--secondary);
+  color: var(--secondary);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--secondary);
+}
+
+/* authentication form */
+form.signup, form.login {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 4px;
+}
+.loginBtn {
+  margin-right: 10px;
+}
+/* responsive */
+@media (max-width: 600px) {
+  .home {
+    grid-template-columns: 1fr;
+  }
+}
